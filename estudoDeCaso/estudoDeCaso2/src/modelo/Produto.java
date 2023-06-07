@@ -1,4 +1,4 @@
-package estudoDeCaso2;
+package modelo;
 
 public class Produto {
 
@@ -6,13 +6,16 @@ public class Produto {
 	private String nomeProduto;
 	private Double valorCompra;
 	private Integer quantidadeProduto;
-	Produto(){}
+	
+	public Produto(){}
+	
 	public Produto(Integer codigoProduto, String nomeProduto, Double valorCompra, Integer quantidadeProduto) {
 		this.codigoProduto = codigoProduto;
 		this.nomeProduto = nomeProduto;
 		this.valorCompra = valorCompra;
 		this.quantidadeProduto = quantidadeProduto;
 	}
+	
 	public Integer getCodigoProduto() {
 		return codigoProduto;
 	}
@@ -37,8 +40,5 @@ public class Produto {
 	public void setQuantidadeProduto(Integer quantidadeProduto) {
 		this.quantidadeProduto = quantidadeProduto;
 	}
-	
-	
-	
 	
 }
