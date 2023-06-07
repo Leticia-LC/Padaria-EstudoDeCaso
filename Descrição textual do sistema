@@ -1,0 +1,30 @@
+1. Área onde está inserido o tema escolhido para o sistema. Exemplo: biologia; finanças; artes; educação; etc.
+
+Alimentação – Confeitaria
+
+2. Categoria/tipo do sistema escolhido. Exemplo: jogo; sistema de cadastro; etc.
+
+Sistema de Cadastro e Controle de Estoque.
+
+3. Descrição geral do sistema a ser desenvolvido (no mínimo 1 parágrafo - 7 linhas) detalhando quais as funcionalidades do sistema.
+
+Com o sistema, o usuário poderá cadastrar algum produto em seu estoque, identificando qual o código, nome, quantidade, valor de compra e valor de venda do produto cadastrado e remover produtos de seu estoque. O software pode também permitir que o usuário analise o seu estoque quando desejar. Além disso, tendo o software em mãos, o usuário também será capaz de verificar o seu saldo em R$ e de conseguir examinar o seu histórico de vendas, possibilitando a verificação de como tem sido o seu lucro até então.
+
+
+3.1 Quem é o usuário do sistema (público-alvo)?
+
+O público-alvo éo dono ou caixa da confeitaria.
+
+
+3.2 Há cadastro neste sistema? Se sim, quantos cadastros e quais?
+
+Sim, o sistema cadastra produtos de confeitaria, como bolos, sonhos, tortas e etc.Ao cadastrar o produto, será cadastrado o código, o nome, valor de compra, valor de venda e quantidade do produto.
+
+
+3.2 O que o usuário pode fazer neste sistema?
+
+O usuário pode cadastrar um produto, vender o produtor, verificar o estoque, verificar histórico de vendas e verificar o saldo da empresa.
+
+
+
+Alunos: Henry Janke, José Paulo, Kemily Cristina e Letícia Lima.
