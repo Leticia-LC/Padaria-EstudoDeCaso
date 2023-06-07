@@ -4,22 +4,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import modelo.Produto;
+import modelo.VendaProduto;
 
 public class VendaDAO extends Produto {
 
-	private ArrayList<Double> valorVenda;
+	private ArrayList<VendaProduto> valorVenda;
 
 	public VendaDAO() {
-		this.valorVenda = new ArrayList<Double>();
-	}
-
-	public ArrayList<Double> getValorVenda() {
-		return valorVenda;
-	}
-
-	public void setValorVenda(ArrayList<Double> valorVenda) {
-		this.valorVenda = valorVenda;
-	}
+		this.valorVenda = new ArrayList<VendaProduto>();
+	}	
 
 	public void adicionarVenda() {
 		Scanner input = new Scanner(System.in);
