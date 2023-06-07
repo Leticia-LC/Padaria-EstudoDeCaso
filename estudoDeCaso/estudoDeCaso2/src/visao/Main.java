@@ -9,7 +9,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		VendaDAO venda = new VendaDAO();
 		Integer op = 0;
 		String str = "";
 
@@ -26,20 +25,14 @@ public class Main {
 
 			switch (op) {
 			case 1: {
-				ArrayList<Double> valorVenda = new ArrayList<>();
 
-				venda.historicoVendas();
 				break;
 			}
 			case 2: {
-
 				break;
 			}
 			case 3: {
-				venda.adicionarVenda();
-			}
-			default:
-
+				break;
 			}
 
 			System.out.print("Deseja voltar[s/n]: ");

@@ -8,6 +8,26 @@ import modelo.Produto;
 // Estoque
 public class ProdutoDAO implements IProdutoDAO {
 
+	private static ProdutoDAO instancia;
+	private static ArrayList<Produto> produtos;
+
+	public static ProdutoDAO getInstancia() {
+
+		if (instancia == null) {
+			instancia = new ProdutoDAO();
+			
+			produtos = new ArrayList<>();
+			
+			// produtos pre cadastrados
+			
+			Produto p = new Produto();
+			p.setNomeProduto("Pastel");
+			produtos.add(p);
+		}
+
+		return instancia;
+	}
+
 	@Override
 	public boolean inserir(Produto p) {
 		// TODO Auto-generated method stub
@@ -28,8 +48,7 @@ public class ProdutoDAO implements IProdutoDAO {
 
 	@Override
 	public ArrayList<Produto> listarProdutos() {
-		// TODO Auto-generated method stub
-		return null;
+		return produtos;
 	}
 
 }
