@@ -1,9 +1,6 @@
 package visao;
 
-import java.util.ArrayList;
 import java.util.Scanner;
-
-import controle.VendaDAO;
 
 public class Main {
 
@@ -33,6 +30,7 @@ public class Main {
 			}
 			case 3: {
 				break;
+			}
 			}
 
 			System.out.print("Deseja voltar[s/n]: ");
