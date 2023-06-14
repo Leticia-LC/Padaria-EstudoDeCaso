@@ -29,7 +29,6 @@ public class ProdutoDAO implements IProdutoDAO {
 			produtos.add(p1);
 			Produto p2 = new Produto();
 			p2.setNomeProduto("Torta mineira de abacaxi e coco");
-			
 			p2.setValorCompra(45.00);
 			p2.setCodigoProduto(23456433);
 			produtos.add(p2);
@@ -37,6 +36,7 @@ public class ProdutoDAO implements IProdutoDAO {
 			p3.setNomeProduto("Bolo RedVelvet com geleia de frutas vermelhas");
 			p3.setValorCompra(60.50);
 			p3.setCodigoProduto(468434566);
+			produtos.add(p3);
 
 		}
 
