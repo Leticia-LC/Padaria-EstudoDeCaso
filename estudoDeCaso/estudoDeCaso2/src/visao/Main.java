@@ -27,11 +27,11 @@ public class Main {
 			menu();
 			str = in.nextLine();
 			op = Integer.valueOf(str);
-			if (op >= 1 || op <= 3) {
-
-			} else {
+			if (op < 1 || op > 3) {
 				System.out.println("Erro");
 				op = null;
+				str = in.nextLine();
+				op = Integer.valueOf(str);
 			}
 
 			switch (op) {
