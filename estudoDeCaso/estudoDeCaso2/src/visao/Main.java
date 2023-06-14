@@ -27,12 +27,12 @@ public class Main {
 			menu();
 			str = in.nextLine();
 			op = Integer.valueOf(str);
-			if (op < 1 || op > 3) {
+			do {
 				System.out.println("Erro");
 				op = null;
 				str = in.nextLine();
 				op = Integer.valueOf(str);
-			}
+			}while (op < 1 || op > 3);
 
 			switch (op) {
 			case 1: {
