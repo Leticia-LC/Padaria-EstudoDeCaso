@@ -15,11 +15,11 @@ public class ProdutoDAO implements IProdutoDAO {
 
 		if (instancia == null) {
 			instancia = new ProdutoDAO();
-			
+
 			produtos = new ArrayList<>();
-			
+
 			// produtos pre cadastrados
-			
+
 			Produto p1 = new Produto();
 			p1.setNomeProduto("Pastel de carne com queijo cheddar");
 			p1.setValorCompra(8.50);
@@ -34,7 +34,7 @@ public class ProdutoDAO implements IProdutoDAO {
 			p3.setNomeProduto("Bolo RedVelvet com geleia de frutas vermelhas");
 			p3.setValorCompra(60.50);
 			p3.setCodigoProduto(468434566);
-			
+
 		}
 
 		return instancia;
@@ -42,19 +42,35 @@ public class ProdutoDAO implements IProdutoDAO {
 
 	@Override
 	public boolean inserir(Produto p) {
-		// TODO Auto-generated method stub
+
+		if (p != null) {
+			produtos.add(p);
+			return true;
+		}
+
 		return false;
 	}
 
 	@Override
 	public boolean alterar(Produto p, long xxx) {
-		// TODO Auto-generated method stub
+
+		for (Produto produto : produtos) {
+
+		}
+
 		return false;
 	}
 
 	@Override
 	public boolean excluir(Produto p, long xxx) {
-		// TODO Auto-generated method stub
+
+		for (Produto produto : produtos) {
+			if (produto.getCodigoProduto() == p.getCodigoProduto()) {
+				produtos.remove(produto);
+				return true;
+			}
+		}
+
 		return false;
 	}
 
