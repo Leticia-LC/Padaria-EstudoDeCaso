@@ -10,6 +10,8 @@ public class ProdutoDAO implements IProdutoDAO {
 
 	private static ProdutoDAO instancia;
 	private static ArrayList<Produto> produtos;
+	
+	private ProdutoDAO() {}
 
 	public static ProdutoDAO getInstancia() {
 
@@ -27,6 +29,7 @@ public class ProdutoDAO implements IProdutoDAO {
 			produtos.add(p1);
 			Produto p2 = new Produto();
 			p2.setNomeProduto("Torta mineira de abacaxi e coco");
+			
 			p2.setValorCompra(45.00);
 			p2.setCodigoProduto(23456433);
 			produtos.add(p2);
