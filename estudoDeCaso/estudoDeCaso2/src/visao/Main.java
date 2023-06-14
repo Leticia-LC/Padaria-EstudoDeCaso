@@ -38,7 +38,7 @@ public class Main {
 
 				break;
 			}
-			
+
 			case 2: {
 				ArrayList<Produto> produtos = dao.listarProdutos();
 				for (Produto produto : produtos) {
@@ -51,29 +51,33 @@ public class Main {
 				System.out.println("Voltar ao Menu [4]");
 				System.out.println("-> ");
 				estr = in.nextLine();
-				Eop = Integer.valueOf(str);
+				Eop = Integer.valueOf(estr);
 				switch (Eop) {
 				case 1: {
-					/*dao.inserir */
+					/* dao.inserir */
+					break;
 				}
-				
+
 				case 2: {
-					/*dao.alterar */
+					/* dao.alterar */
+					break;
 				}
-				
+
 				case 3: {
-					/*dao.excluir */
+					/* dao.excluir */
+					break;
 				}
-				
+
 				case 4: {
-					break; /*Aqui a gente tem que fazer o programa voltar pro menu e mostrar o menu */
+					break; /* Aqui a gente tem que fazer o programa voltar pro menu e mostrar o menu */
 				}
-				
+
 				}
-				
+
 				break;
+
 			}
-			
+
 			case 3: {
 				Produto produto = new Produto();
 				System.out.print("Codigo produto: ");
@@ -95,9 +99,12 @@ public class Main {
 				break;
 			}
 			}
+			
+			System.out.println("oi");
 
-			/**System.out.print("Deseja voltar[s/n]: ");
-			str = in.nextLine();**/
+			/**
+			 * System.out.print("Deseja voltar[s/n]: "); str = in.nextLine();
+			 **/
 
 		} while (str.equals("s"));
 
