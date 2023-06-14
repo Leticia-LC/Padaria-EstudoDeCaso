@@ -1,5 +1,6 @@
 package visao;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import controle.ProdutoDAO;
@@ -32,11 +33,16 @@ public class Main {
 
 			switch (op) {
 			case 1: {
-
+				
 				break;
 			}
 			case 2: {
-
+				ArrayList<Produto> produtos = dao.listarProdutos();
+				for (Produto produto : produtos) {
+					System.out.println();
+				}
+				System.out.println();
+				
 				break;
 			}
 			case 3: {
