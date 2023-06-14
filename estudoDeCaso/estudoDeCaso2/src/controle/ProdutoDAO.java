@@ -52,17 +52,21 @@ public class ProdutoDAO implements IProdutoDAO {
 	}
 
 	@Override
-	public boolean alterar(Produto p, long xxx) {
+	public boolean alterar(Produto p) {
 
 		for (Produto produto : produtos) {
-
+			if (produto.getCodigoProduto() == p.getCodigoProduto()) {
+				produto.setNomeProduto(p.getNomeProduto());
+				produto.setQuantidadeProduto(p.getQuantidadeProduto());
+				produto.setValorCompra(p.getValorCompra());
+			}
 		}
 
 		return false;
 	}
 
 	@Override
-	public boolean excluir(Produto p, long xxx) {
+	public boolean excluir(Produto p) {
 
 		for (Produto produto : produtos) {
 			if (produto.getCodigoProduto() == p.getCodigoProduto()) {
