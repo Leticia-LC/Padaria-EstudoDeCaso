@@ -1,5 +1,6 @@
 package visao;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import controle.ProdutoDAO;
@@ -10,6 +11,8 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		Integer op = 0;
+		Integer Eop = 0;
+		String estr = "";
 		String str = "";
 		ProdutoDAO dao = ProdutoDAO.getInstancia();
 
@@ -35,10 +38,42 @@ public class Main {
 
 				break;
 			}
+			
 			case 2: {
-
+				ArrayList<Produto> produtos = dao.listarProdutos();
+				for (Produto produto : produtos) {
+					System.out.println();
+				}
+				System.out.println("------------");
+				System.out.println("Adicionar Produto ao estoque [1]");
+				System.out.println("Modificar Produto do estoque [2]");
+				System.out.println("Remover Produto do estoque [3]");
+				System.out.println("Voltar ao Menu [4]");
+				System.out.println("-> ");
+				estr = in.nextLine();
+				Eop = Integer.valueOf(str);
+				switch (Eop) {
+				case 1: {
+					/*dao.inserir */
+				}
+				
+				case 2: {
+					/*dao.alterar */
+				}
+				
+				case 3: {
+					/*dao.excluir */
+				}
+				
+				case 4: {
+					break; /*Aqui a gente tem que fazer o programa voltar pro menu e mostrar o menu */
+				}
+				
+				}
+				
 				break;
 			}
+			
 			case 3: {
 				Produto produto = new Produto();
 				System.out.print("Codigo produto: ");
@@ -61,8 +96,8 @@ public class Main {
 			}
 			}
 
-			System.out.print("Deseja voltar[s/n]: ");
-			str = in.nextLine();
+			/**System.out.print("Deseja voltar[s/n]: ");
+			str = in.nextLine();**/
 
 		} while (str.equals("s"));
 
