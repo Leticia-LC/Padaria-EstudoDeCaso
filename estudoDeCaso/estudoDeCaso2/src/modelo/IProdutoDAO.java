@@ -11,7 +11,6 @@ public interface IProdutoDAO {
 	
 	
 	public boolean inserir(Produto p) ;
-	
 
 	public boolean alterar(Produto p);
 

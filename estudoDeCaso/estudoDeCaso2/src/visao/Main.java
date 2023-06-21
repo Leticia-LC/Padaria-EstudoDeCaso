@@ -45,7 +45,7 @@ public class Main {
 				case 2: {
 					ArrayList<Produto> produtos = dao.listarProdutos();
 					for (Produto produto : produtos) {
-						System.out.println();
+						System.out.println(produto.getNomeProduto());
 					}
 					System.out.println("------------");
 					System.out.println("Adicionar Produto ao estoque [1]");
