@@ -60,7 +60,6 @@ public class ProdutoDAO implements IProdutoDAO {
 		for (Produto produto : produtos) {
 			if (produto.getCodigoProduto() == p.getCodigoProduto()) {
 				produto.setNomeProduto(p.getNomeProduto());
-				produto.setQuantidadeProduto(p.getQuantidadeProduto());
 				produto.setValorCompra(p.getValorCompra());
 			}
 		}

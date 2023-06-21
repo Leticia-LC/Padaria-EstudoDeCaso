@@ -3,6 +3,8 @@ package visao;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.swing.tree.AbstractLayoutCache;
+
 import controle.ProdutoDAO;
 import modelo.Produto;
 
@@ -55,22 +57,30 @@ public class Main {
 					Eop = Integer.valueOf(estr);
 					switch (Eop) {
 					case 1: {
-						/* dao.inserir */
+						
+						System.out.println("Digite o Código o produto: ");
+						Integer codigoPr = Integer.valueOf(in.nextLine());
+						System.out.println("Digite o Nome o produto: ");
+						String nomeP = in.nextLine();
+						System.out.println("Digite o Valor de compra do produto: ");
+						Double valorC = Double.valueOf(in.nextLine());
+						Produto p = new Produto(codigoPr, nomeP, valorC);
+						dao.inserir(p);
 						break;
 					}
 	
 					case 2: {
-						/* dao.alterar */
+						dao.alterar(null);
 						break;
 					}
 	
 					case 3: {
-						/* dao.excluir */
+						dao.excluir(null);
 						break;
 					}
 	
 					case 4: {
-						break; /* Aqui a gente tem que fazer o programa voltar pro menu e mostrar o menu */
+						break;
 					}
 	
 					}
@@ -92,7 +102,6 @@ public class Main {
 
 				produto.setCodigoProduto(codigoProduto);
 				produto.setNomeProduto(nomeProduto);
-				produto.setQuantidadeProduto(quantidadeProduto);
 				produto.setValorCompra(valorCompra);
 
 				dao.inserir(produto);

@@ -5,15 +5,13 @@ public class Produto {
 	private Integer codigoProduto;
 	private String nomeProduto;
 	private Double valorCompra;
-	private Integer quantidadeProduto;
 	
 	public Produto(){}
 	
-	public Produto(Integer codigoProduto, String nomeProduto, Double valorCompra, Integer quantidadeProduto) {
+	public Produto(Integer codigoProduto, String nomeProduto, Double valorCompra) {
 		this.codigoProduto = codigoProduto;
 		this.nomeProduto = nomeProduto;
 		this.valorCompra = valorCompra;
-		this.quantidadeProduto = quantidadeProduto;
 	}
 	
 	public Integer getCodigoProduto() {
@@ -34,11 +32,4 @@ public class Produto {
 	public void setValorCompra(Double valorCompra) {
 		this.valorCompra = valorCompra;
 	}
-	public Integer getQuantidadeProduto() {
-		return quantidadeProduto;
-	}
-	public void setQuantidadeProduto(Integer quantidadeProduto) {
-		this.quantidadeProduto = quantidadeProduto;
-	}
-	
 }
